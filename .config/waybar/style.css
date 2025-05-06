@@ -1,0 +1,94 @@
+@import "mocha.css";
+
+* {
+  font-family: MesloLGL Nerd Font;
+  font-size: 16px;
+  min-height: 0;
+}
+
+#waybar {
+  background-color: @surface0;
+  border-radius: 0.6rem;
+  color: @text;
+}
+
+#workspaces {
+  padding-left: 0.6rem;
+  background: transparent;
+}
+
+#workspaces button {
+  color: @lavender;
+  background: transparent;
+}
+
+#workspaces button.active {
+  color: @teal;
+}
+
+#custom-notification,
+#network,
+#cpu,
+#memory,
+#pulseaudio,
+#backlight,
+#battery,
+#tray,
+#custom-lock,
+#custom-power {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+#clock {
+  color: @text;
+}
+
+tooltip {
+  background-color: @surface0;
+  opacity: 0.8;
+  border-radius: 0.4rem;
+}
+
+#network {
+  color: @rosewater;
+}
+#cpu {
+  color: @blue;
+}
+
+#memory {
+  color: @peach;
+}
+
+#pulseaudio {
+  color: @maroon;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#battery {
+  color: @green;
+  background: transparent;
+}
+
+#battery.charging {
+  color: @green;
+  background: transparent;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+  background: transparent;
+}
+
+#custom-lock {
+  color: @lavender;
+}
+
+#custom-power {
+  margin-right: 0.6rem;
+  color: @red;
+}
