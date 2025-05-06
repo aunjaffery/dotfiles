@@ -54,7 +54,7 @@ alias addall='git add .'
 alias commit='git commit -m'
 alias push='git push origin'
 #abbrevations to open configs in nvim
-alias cala="nvim ~/.config/alacritty/alacritty.yml"
+alias cala="nvim ~/.config/alacritty/alacritty.toml"
 alias cbs="nvim ~/.bashrc"
 alias cvi="nvim ~/.config/nvim/init.lua"
 
