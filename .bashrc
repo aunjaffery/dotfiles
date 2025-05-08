@@ -58,6 +58,7 @@ alias cala="nvim ~/.config/alacritty/alacritty.toml"
 alias cbs="nvim ~/.bashrc"
 alias cvi="nvim ~/.config/nvim/init.lua"
 alias chl="cd ~/dotfiles/.config/hypr/ && nvim ./hyprland.conf"
+alias cwy="cd ~/dotfiles/.config/waybar/ && nvim ./config.jsonc"
 
 alias homelab="ssh root@192.168.18.50"
 alias pi1="sudo ssh 192.168.18.60"
@@ -65,7 +66,6 @@ alias pi1="sudo ssh 192.168.18.60"
 alias psqlocal='psql -h localhost -U root'
 
 export PATH=~/go/bin:/usr/local/go/bin:$HOME/.local/bin:$PATH
-export XDG_SCREENSHOTS_DIR=~/Pictures/Screenshots
 
 
 export NVM_DIR="$HOME/.nvm"
