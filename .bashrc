@@ -66,6 +66,11 @@ alias addall='git add .'
 alias commit='git commit -m'
 alias push='git push origin'
 
+#k8s aliase
+alias kpo="kubectl get po"
+alias ksvc="kubectl get svc"
+alias kall="kubectl get all"
+
 #abbrevations to open configs in nvim
 alias cala="nvim ~/.config/alacritty/alacritty.yml"
 alias cbs="nvim ~/.bashrc"
@@ -85,9 +90,9 @@ export NVM_DIR="$HOME/.nvm"
 source "$HOME/.cargo/env"
 
 alias luamake=/home/aun/Downloads/lua-language-server/3rd/luamake/luamake
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init - bash)"
 # gcloud sdk
 gcloud="$HOME/Downloads/google-cloud-sdk"
 [ -f "$gcloud/path.bash.inc" ] && source "$gcloud/path.bash.inc"
