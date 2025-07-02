@@ -43,8 +43,8 @@ style = "Regular"
 
 [window]
 opacity = 0.96
+decorations = "None"
 
 [window.padding]
 x = 2
 y = 0
-
