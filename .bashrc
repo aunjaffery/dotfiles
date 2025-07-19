@@ -58,8 +58,10 @@ alias ...="cd ../../"
 
 # vim = nvim
 alias vim='nvim'
-
+# distro update
 alias update='sudo dnf upgrade -y'
+# aria2c
+alias tor='aria2c -s10 -x10'
 
 #git aliase
 alias addall='git add .'
