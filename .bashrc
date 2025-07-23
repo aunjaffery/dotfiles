@@ -72,6 +72,7 @@ alias push='git push origin'
 alias kpo="kubectl get po"
 alias ksvc="kubectl get svc"
 alias kall="kubectl get all"
+alias ktop="kubectl top po"
 
 #abbrevations to open configs in nvim
 alias cala="nvim ~/.config/alacritty/alacritty.yml"
