@@ -73,6 +73,8 @@ alias kpo="kubectl get po"
 alias ksvc="kubectl get svc"
 alias kall="kubectl get all"
 alias ktop="kubectl top po"
+alias klog="kubectl logs --tail=500"
+alias klogs="kubectl logs --tail=200 -f"
 
 #abbrevations to open configs in nvim
 alias cala="nvim ~/.config/alacritty/alacritty.yml"
