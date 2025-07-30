@@ -87,7 +87,7 @@ alias homelab="ssh root@192.168.18.50"
 alias pi1="sudo ssh 192.168.18.60"
 
 export PATH=~/go/bin:/usr/local/go/bin:$HOME/.local/bin:$PATH
-export NODE_PATH=/home/aunpc/.nvm/versions/node/v22.13.0/lib/node_modules
+export NODE_PATH=$HOME/.nvm/versions/node/v22.17.1/lib/node_modules
 
 
 export NVM_DIR="$HOME/.nvm"
