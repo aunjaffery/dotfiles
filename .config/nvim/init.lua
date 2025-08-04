@@ -1,11 +1,18 @@
-vim.o.number = true
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
-vim.o.expandtab = true
-vim.o.signcolumn = "yes"
-vim.o.winborder = "rounded"
-
+local o = vim.opt
 local map = vim.keymap.set
+
+o.number = true
+o.tabstop = 2
+o.shiftwidth = 2
+o.expandtab = true
+o.signcolumn = "yes"
+o.winborder = "rounded"
+o.termguicolors = true
+-- split windows
+o.splitright = true -- split vertical window to the right
+o.splitbelow = true -- split horizontal window to the bottom
+
+o.wrap = false
 
 map("n", "<leader>h", ":nohl<CR>", { desc = "Clear search highlights" })
 map("n", "H", "<C-w>h", { silent = true })
