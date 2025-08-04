@@ -14,6 +14,12 @@ o.splitbelow = true -- split horizontal window to the bottom
 
 o.wrap = false
 
+o.ignorecase = true -- ignore case when searching
+o.smartcase = true  -- if you include mixed case in your search, assumes you want case-sensitive
+
+o.cursorline = true
+
+
 map("n", "<leader>h", ":nohl<CR>", { desc = "Clear search highlights" })
 map("n", "H", "<C-w>h", { silent = true })
 map("n", "L", "<C-w>l", { silent = true })
@@ -52,6 +58,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.formatoptions:remove({ "o", "r" })
   end,
 })
+
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
     local client = vim.lsp.get_client_by_id(args.data.client_id)
@@ -61,4 +68,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
   end,
 })
+
 require("config.lazy")
