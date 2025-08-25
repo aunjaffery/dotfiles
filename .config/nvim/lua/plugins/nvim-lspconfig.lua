@@ -36,6 +36,7 @@ return {
           "gopls",
           "pyright",
           "bashls",
+          "yamlls",
         },
       })
 
@@ -43,6 +44,7 @@ return {
         ensure_installed = {
           "prettier", -- prettier formatter
           "stylua",   -- lua formatter
+          "yamlfmt",
         },
       })
     end,
