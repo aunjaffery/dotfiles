@@ -103,3 +103,7 @@ alias luamake=/home/aun/Downloads/lua-language-server/3rd/luamake/luamake
 gcloud="$HOME/Downloads/google-cloud-sdk"
 [ -f "$gcloud/path.bash.inc" ] && source "$gcloud/path.bash.inc"
 [ -f "$gcloud/completion.bash.inc" ] && source "$gcloud/completion.bash.inc"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
