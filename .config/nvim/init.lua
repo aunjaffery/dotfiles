@@ -65,6 +65,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     if client.server_capabilities.definitionProvider then
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = args.buf, desc = "Go to definition" })
       vim.keymap.set('n', "<C-k>", vim.lsp.buf.hover, { buffer = args.buf, desc = "hover" })
+      vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+      vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
     end
   end,
 })
