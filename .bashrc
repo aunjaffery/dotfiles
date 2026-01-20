@@ -84,9 +84,6 @@ alias cvi="nvim ~/.config/nvim/init.lua"
 alias fala="cd ~/.config/alacritty/"
 alias fvi="cd ~/.config/nvim/"
 
-alias homelab="ssh root@192.168.18.50"
-alias pi1="sudo ssh 192.168.18.60"
-
 export PATH=~/go/bin:/usr/local/go/bin:$HOME/.local/bin:$PATH
 export NODE_PATH=$HOME/.nvm/versions/node/v22.17.1/lib/node_modules
 
