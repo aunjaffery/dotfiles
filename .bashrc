@@ -52,7 +52,6 @@ alias rg="rg -i"
 #alias fd="fdfind"
 
 #navigation aliase
-alias .="cd"
 alias ..="cd .."
 alias ...="cd ../../"
 
