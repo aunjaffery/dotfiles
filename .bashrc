@@ -1,9 +1,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-parse_git_branch() {
-	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+# parse_git_branch() {
+# 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+# }
 PS1='\[\e]0;\u@\h: \w\a\]\[\033[1;92m\]\u@\h\[\033[m\]:\[\033[1;94m\]\w\[\033[m\]\n\$ '
 
 # fzf commands and settings
@@ -44,7 +44,6 @@ alias ls='eza -la --color=always --group-directories-first' # my preferred listi
 alias la='eza -a --color=always --group-directories-first'  # all files and dirs
 alias ll='eza -la --color=always --group-directories-first -rs modified'  # long format
 alias lt='eza -aT -L 3 --color=always --group-directories-first' # tree listing
-alias l.='eza -a | egrep "^\."'
 
 #sensitivity
 alias grep="rg -i"
@@ -84,19 +83,11 @@ alias fala="cd ~/.config/alacritty/"
 alias fvi="cd ~/.config/nvim/"
 
 export PATH=~/go/bin:/usr/local/go/bin:$HOME/.local/bin:$PATH
-export NODE_PATH=$HOME/.nvm/versions/node/v22.17.1/lib/node_modules
 
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source "$HOME/.cargo/env"
 
 alias luamake=/home/aun/Downloads/lua-language-server/3rd/luamake/luamake
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init - bash)"
-# gcloud sdk
+
 gcloud="$HOME/Downloads/google-cloud-sdk"
 [ -f "$gcloud/path.bash.inc" ] && source "$gcloud/path.bash.inc"
 [ -f "$gcloud/completion.bash.inc" ] && source "$gcloud/completion.bash.inc"
