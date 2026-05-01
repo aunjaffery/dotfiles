@@ -31,9 +31,8 @@ bind "set menu-complete-display-prefix on"
 bind "set completion-ignore-case on"
 
 # # Use bash-completion, if available
-# [[ $PS1 && -f /usr/share/bash-completion ]] && \
 if [[ -e /usr/share/bash-completion ]]; then
-  source /usr/share/bash-completion/*
+  source /usr/share/bash-completion/bash_completion
 fi
 
 export MANPAGER="nvim +Man!"
