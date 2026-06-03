@@ -28,6 +28,7 @@ map("n", "L", "<C-w>l", { silent = true })
 map("n", "<leader>f", vim.lsp.buf.format)
 
 map('n', 'sf', '<Cmd>NvimTreeToggle<CR>')
+map('n', 'sg', '<Cmd>NvimTreeFindFileToggle<CR>')
 
 --Move selected line
 map("v", "K", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
