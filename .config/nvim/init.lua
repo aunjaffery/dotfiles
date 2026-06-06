@@ -16,19 +16,18 @@ o.splitbelow = true -- split horizontal window to the bottom
 o.wrap = false
 
 o.ignorecase = true -- ignore case when searching
-o.smartcase = true  -- if you include mixed case in your search, assumes you want case-sensitive
+o.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 o.cursorline = true
 vim.opt.showtabline = 2
 
-
 map("n", "<leader>h", ":nohl<CR>", { desc = "Clear search highlights" })
 map("n", "H", "<C-w>h", { silent = true })
 map("n", "L", "<C-w>l", { silent = true })
-map("n", "<leader>f", vim.lsp.buf.format)
+-- map("n", "<leader>f", vim.lsp.buf.format)
 
-map('n', 'sf', '<Cmd>NvimTreeToggle<CR>')
-map('n', 'sg', '<Cmd>NvimTreeFindFileToggle<CR>')
+map("n", "sf", "<Cmd>NvimTreeToggle<CR>")
+map("n", "sg", "<Cmd>NvimTreeFindFileToggle<CR>")
 
 --Move selected line
 map("v", "K", ":move '<-2<CR>gv=gv", { noremap = true, silent = true })
@@ -51,13 +50,12 @@ map("v", "<Leader>d", '""d', { silent = true })
 pcall(vim.cmd, "command! W w")
 pcall(vim.cmd, "command!-bang Q q<bang>")
 
-
 -- Disable auto-commenting on new lines
 local general_group = vim.api.nvim_create_augroup("GeneralSettings", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
-  group = general_group,
-  pattern = "*",
-  callback = function()
-    vim.opt_local.formatoptions:remove({ "o", "r" })
-  end,
+	group = general_group,
+	pattern = "*",
+	callback = function()
+		vim.opt_local.formatoptions:remove({ "o", "r" })
+	end,
 })
