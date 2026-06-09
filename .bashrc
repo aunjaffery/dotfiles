@@ -57,6 +57,7 @@ alias ...="cd ../../"
 alias vim='nvim'
 # distro update
 alias update='sudo dnf upgrade -y'
+alias pi4='ssh root@192.168.18.60'
 # aria2c
 alias tor='aria2c -s10 -x10'
 
