@@ -59,3 +59,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.formatoptions:remove({ "o", "r" })
 	end,
 })
+
+vim.api.nvim_create_user_command('PackUpdate', function()
+  vim.pack.update()
+end, {})

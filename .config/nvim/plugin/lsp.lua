@@ -9,7 +9,7 @@ require("mason").setup()
 
 require("mason-lspconfig").setup({
 	ensure_installed = {
-		"ts_ls",
+		"vtsls",
 		"html",
 		"cssls",
 		"tailwindcss",
@@ -25,7 +25,7 @@ require("mason-tool-installer").setup({
 	ensure_installed = { "prettier", "stylua", "gofumpt" },
 })
 
-vim.lsp.enable({ "bashls", "gopls", "lua_ls", "ts_ls" })
+vim.lsp.enable({ "bashls", "gopls", "lua_ls", "vtsls" })
 
 vim.diagnostic.config({ virtual_text = true })
 

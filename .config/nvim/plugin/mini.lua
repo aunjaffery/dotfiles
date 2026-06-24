@@ -1,6 +1,6 @@
 vim.pack.add({
 	{ src = "https://github.com/nvim-mini/mini.nvim" },
-	{ src = "nvim-tree/nvim-web-devicons" },
+	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 })
 
 -- require("mini.tabline").setup({
